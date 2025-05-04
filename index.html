@@ -7,32 +7,29 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>To-Do List</title>
 </head>
-<body class="bg-gradient-to-br from-gray-800 to-blue-900 min-h-screen flex items-center justify-center p-5">
-    <div class="bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 w-full max-w-[550px] p-6 shadow-2xl">
-        <h1 class="text-white text-4xl font-semibold text-center mb-3">To-Do List</h1>
-        <p class="text-white/70 text-center" id="task-count">You have 0 Tasks</p>
-
-        <!-- Input + Button -->
-        <div class="flex flex-wrap md:flex-nowrap items-center gap-3 mt-5">
-            <input 
-                type="text" 
-                placeholder="Enter your task"
-                id="task-input"
-                class="bg-white/10 h-[50px] flex-1 rounded-lg text-white px-5 outline-none
-                focus:shadow-2xl focus:ring-2 focus:ring-blue-900/20 focus:bg-white/20"
-            />
-            <button class="bg-white/10 w-[50px] h-[50px] rounded-lg hover:bg-white/20 flex items-center justify-center disabled:opacity-50" id="add-button" type="button" disabled>
-                <i class="fas fa-plus text-2xl text-white"></i>
-            </button>
+<body class="bg-gradient-to-br from-gray-800 to-blue-900 min-h-screen">
+    <div class="mx-auto mt-30 bg-white/2 backdrop-blur-lg shadow-2x rounded-2xl border border-white/5 w-[550px] shadow-2xl overflow-auto h-full max-md:w-[90%]">
+        <div class="flex flex-col justify-center items-center py-10">
+            <h1 class="text-white text-5xl font-semibold">To-Do List</h1>
+            <form action="#">
+                <p class="text-white/70 text-1xl font-semibold flex justify-center mt-5" id="task-count">You have 0 Tasks</p>
+                <input 
+                    required
+                    type="text" 
+                    name="taskname" 
+                    placeholder="Enter your task"
+                    id="task-input"
+                    class="bg-white/10 h-[50px] w-[300px] mt-10 rounded-lg text-white px-5 outline-none
+                    focus:shadow-2xl focus:ring-2 focus:ring-blue-900/20 focus:bg-white/20"
+                />
+                <button class="bg-white/10 w-[50px] h-[50px] rounded-lg hover:bg-white/20" id="add-button" type="button" disabled>
+                    <i class="fas fa-plus text-2xl text-white"></i>
+                </button>
+            </form>
+            <div class="" id="task-container"></div>
+            <button class="text-white/70 text-1xl flex justify-center mx-auto mt-5" type="button" id="clear-button">Clear All</button>
         </div>
-
-        <!-- Tasks -->
-        <div id="task-container" class="mt-5 max-h-[400px] overflow-y-auto flex flex-col gap-3"></div>
-
-        <!-- Clear All -->
-        <button class="text-white/70 flex justify-center mx-auto mt-5 hover:text-white" type="button" id="clear-button">Clear All</button>
     </div>
-
     <script src="./js/script.js"></script>
 </body>
 </html>
