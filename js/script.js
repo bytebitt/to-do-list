@@ -3,6 +3,12 @@ const taskInput = document.getElementById("task-input");
 const taskContainer = document.getElementById("task-container");
 const taskCountElement = document.getElementById("task-count");
 const clearAll = document.getElementById("clear-button");
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    addButton.click();
+});
 
 let count = 0;
 
