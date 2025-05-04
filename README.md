@@ -10,7 +10,7 @@ This is a simple To-Do List web application built with HTML, CSS (Tailwind), and
 - Responsive design for mobile devices.
 
 ## Live Demo
-You can view the live demo of this To-Do List app here: [Live Demo](#)
+You can view the live demo of this To-Do List app here: [Live Demo](https://bytebitt.github.io/to-do-list/)
 
 ## Installation
 
