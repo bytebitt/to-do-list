@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: white; 
+    border-radius: 50%;  
+    margin-right: 15px;
+    border-radius: 100%;
+    background-color: transparent;
+    appearance: none;
+    border: 1px solid white;
+}
+
+input[type="checkbox"]:checked {
+    background-color: white;
+}
+
+.completed {
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    text-decoration: line-through; 
+    color: rgba(255, 255, 255, 0.5);
+}
