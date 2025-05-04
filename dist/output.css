@@ -227,8 +227,14 @@
   .max-w-\[90\%\] {
     max-width: 90%;
   }
+  .max-w-\[100\%\] {
+    max-width: 100%;
+  }
   .max-w-\[550px\] {
     max-width: 550px;
+  }
+  .max-w-full {
+    max-width: 100%;
   }
   .flex-1 {
     flex: 1;
@@ -423,14 +429,49 @@
       opacity: 50%;
     }
   }
+  .max-md\:w-\[80\%\] {
+    @media (width < 48rem) {
+      width: 80%;
+    }
+  }
   .max-md\:w-\[90\%\] {
     @media (width < 48rem) {
       width: 90%;
     }
   }
+  .max-md\:w-\[100px\] {
+    @media (width < 48rem) {
+      width: 100px;
+    }
+  }
+  .max-md\:w-\[250px\] {
+    @media (width < 48rem) {
+      width: 250px;
+    }
+  }
+  .max-md\:w-\[300px\] {
+    @media (width < 48rem) {
+      width: 300px;
+    }
+  }
+  .max-md\:w-\[400px\] {
+    @media (width < 48rem) {
+      width: 400px;
+    }
+  }
   .sm\:w-\[300px\] {
     @media (width >= 40rem) {
       width: 300px;
+    }
+  }
+  .sm\:w-\[400px\] {
+    @media (width >= 40rem) {
+      width: 400px;
+    }
+  }
+  .sm\:max-w-\[90\%\] {
+    @media (width >= 40rem) {
+      max-width: 90%;
     }
   }
   .sm\:flex-row {
@@ -454,6 +495,12 @@
         margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
         margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
       }
+    }
+  }
+  .sm\:text-5xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
   .md\:flex-nowrap {

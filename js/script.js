@@ -24,9 +24,9 @@ addButton.addEventListener("click", function () {
     } 
     
     const newItem = document.createElement("div");
-    newItem.className = "bg-white/10 w-[350px] h-[50px] rounded-lg mt-5 flex items-center text-white font-semibold px-5 relative";
+    newItem.className = "bg-white/10 w-[350px] h-[50px] rounded-lg mt-5 flex items-center text-white font-semibold px-5 relative max-md:w-[300px]";
     
-    newItem.addEventListener("dblclick",function() {
+    newItem.addEventListener("dblclick", function () {
         newItem.remove()
         count--;
         taskCountElement.textContent = `You have ${count} Tasks`;
